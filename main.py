@@ -398,9 +398,9 @@ elif page == "Certificates":
                             if cert.endswith('.pdf'):
                                 st.markdown(f"<p style='text-align: center;'>📄 {cert.split('/')[-1]}</p>", unsafe_allow_html=True)
                             else:
-                                st.image(cert, width='stretch')
+                                st.image(cert, use_container_width=True)
                         except Exception as e:
-                            st.error(f"Error loading certificate: {cert}")
+                            st.error(f"Error loading certificate: {cert}. Error: " + str(e))
                         st.markdown("</div>", unsafe_allow_html=True)
 
     certificates = [
