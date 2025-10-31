@@ -147,11 +147,11 @@ if page == "Home":
         </div>
         """, unsafe_allow_html=True)
     
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
     with col1:
         st.markdown("""
         <div class='contact-info'>
-            🔗 <a href='https://www.linkedin.com/in/larissa-campos-a70284239/' target='_blank' style='color: #00f0ff;'>LinkedIn</a>
+            🔗 <a href='https://www.linkedin.com/in/larissa-campos-cardoso-a70284239' target='_blank' style='color: #00f0ff;'>LinkedIn</a>
         </div>
         """, unsafe_allow_html=True)
     
@@ -159,6 +159,13 @@ if page == "Home":
         st.markdown("""
         <div class='contact-info'>
             💻 <a href='https://github.com/LPMLarica' target='_blank' style='color: #00f0ff;'>GitHub</a>
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col3:
+        st.markdown("""
+        <div class='contact-info'>
+            🎓 <a href='https://web.dio.me/users/larissacamposcardoso/?tab=achievements' target='_blank' style='color: #00f0ff;'>Cursos e Estudos</a>
         </div>
         """, unsafe_allow_html=True)
     
