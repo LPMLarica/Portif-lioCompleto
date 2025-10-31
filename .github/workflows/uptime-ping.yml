@@ -1,0 +1,23 @@
+name: Uptime Ping
+
+on:
+  schedule:
+    - cron: '0 */2 * * *' # a cada 2 horas, minuto 0
+  workflow_dispatch:      # permite execução manual
+
+env:
+  TARGET_URL: ${{ secrets.UPTIME_URL }}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping target
+        run: |
+          echo "Pinging $TARGET_URL"
+          if [ -z "$TARGET_URL" ]; then
+            echo "ERROR: TARGET_URL (secret UPTIME_URL) não está definido."
+            exit 1
+          fi
+          # tenta 3 vezes; registra se falhar
+          curl -fsS --retry 3 "$TARGET_URL" -o /dev/null || echo "Ping falhou, ignorando erro."
