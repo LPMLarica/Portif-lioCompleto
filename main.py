@@ -93,6 +93,16 @@ def get_cv_download():
             return href
     return None
 
+def get_cover_download():
+    cover_path = Path("documents-images") / "Cover Letter (1).pdf" 
+    if cover_path.exists():
+        with open(cover_path, "rb") as file:
+            pdf_bytes = file.read()
+            b64_pdf = base64.b64encode(pdf_bytes).decode()
+            href = f'<a href="data:application/pdf;base64,{b64_pdf}" download="CoverLetter_Larissa_Campos.pdf" class="download-button">📥 Download Cover Letter (PDF)</a>'
+            return href
+    return None
+
 if page == "Home":
     col1, col2 = st.columns([1, 2])
     
@@ -172,13 +182,20 @@ if page == "Home":
     # CV
     st.markdown("<div class='tech-divider'></div>", unsafe_allow_html=True)
     
-    col1, col2, col3 = st.columns([1, 1, 1])
+    col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
     with col2:
         cv_download = get_cv_download()
         if cv_download:
             st.markdown(cv_download, unsafe_allow_html=True)
         else:
             st.error("Resume not found. Check the file path.")
+    
+    with col4:
+        cover_download = get_cover_download()
+        if cover_download:
+            st.markdown(cover_download, unsafe_allow_html=True)
+        else:
+            st.error("Cover Letter not found. Check the file path.")
 
     # About
     st.markdown("<div class='tech-divider'></div>", unsafe_allow_html=True)
