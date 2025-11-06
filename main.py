@@ -443,7 +443,7 @@ elif page == "Certificates":
         str(Path("certificados") / "Captura de tela 2025-10-30 125135.png"),
         str(Path("certificados") / "Captura de tela 2025-10-30 125150.png"),
         str(Path("certificados") / "Captura de tela 2025-10-30 125158.png"),
-        str(Path("certificados") / "Captura de tela 2025-10-30 125211.png"),
+        str(Path("certificados") / "Captura de tela 2025-10-30 125221.png"),
         str(Path("certificados") / "Captura de tela 2025-10-30 125211.png"),
         str(Path("certificados") / "a00a37e5-ad50-4c55-b7b7-a7c199f3f3cb.png"),
         str(Path("certificados") / "b8c57e80-b488-4e7b-a614-43b4e55d229a.png"),
