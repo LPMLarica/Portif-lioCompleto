@@ -452,7 +452,6 @@ elif page == "Certificates":
         str(Path("certificados") / "Captura de tela 2025-11-12 180635.png"),
         str(Path("certificados") / "Captura de tela 2025-11-12 180659.png"),
         str(Path("certificados") / "Captura de tela 2025-11-12 180718.png"),
-        str(Path("certificados") / "Captura de tela 2025-11-12 181021.png"),
         str(Path("certificados") / "Captura de tela 2025-11-11 140347.png"),
         str(Path("certificados") / "Captura de tela 2025-11-11 140404.png"),
         str(Path("certificados") / "Captura de tela 2025-11-11 140447.png"),
