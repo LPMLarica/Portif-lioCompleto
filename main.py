@@ -429,6 +429,8 @@ elif page == "Certificates":
 
     certificates = [
         str(Path("certificados") / "357d50a1-29e2-4105-92f1-4fb8104c928e.png"),
+        str(Path("certificados") / "Screenshot 2025-12-04 152529.png"),
+        str(Path("certificados") / "Screenshot 2025-12-04 152541.png"),
         str(Path("certificados") / "e5c2ab92-44a5-4fed-bc8a-a549f63b2987.png"),
         str(Path("certificados") / "64abd841-a690-4240-a7ae-0ff5f9edcc48.png"), 
         str(Path("certificados") / "24fd469e-068a-486a-b126-40e1b8e2de88.png"),
@@ -453,7 +455,6 @@ elif page == "Certificates":
         str(Path("certificados") / "Captura de tela 2025-11-12 180659.png"),
         str(Path("certificados") / "Captura de tela 2025-11-12 180718.png"),
         str(Path("certificados") / "Captura de tela 2025-11-11 140347.png"),
-        str(Path("certificados") / "Captura de tela 2025-11-11 140404.png"),
         str(Path("certificados") / "Captura de tela 2025-11-11 140447.png"),
         str(Path("certificados") / "Captura de tela 2025-11-11 140506.png"),
         str(Path("certificados") / "Captura de tela 2025-11-11 140542.png"),
@@ -483,8 +484,7 @@ elif page == "Certificates":
         str(Path("certificados") / "QIK1CXYO.png"),
         str(Path("certificados") / "RQZHDJRR.png"),
         str(Path("certificados") / "SBLUCZTK.png"),
-        str(Path("certificados") / "TPTI1OJX.png"),
-        str(Path("certificados") / "W1JQMWEI.png")
+        str(Path("certificados") / "TPTI1OJX.png")
     ]
     
     display_certificate_grid(certificates)
